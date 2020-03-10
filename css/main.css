@@ -124,6 +124,7 @@ header .content-wrapper {
 }
 
 header nav {
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -136,11 +137,15 @@ header nav ul {
   align-items: center;
 }
 
-footer .social {
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-flow: column nowrap;
 }
 
 footer .social-icons p {
@@ -226,20 +231,7 @@ aside {
   flew-flow: row wrap;
 }
 
-/* Footer styles */
 
-
-
-footer .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-}
-
-footer address .contact {
-
-}
 
 
 
