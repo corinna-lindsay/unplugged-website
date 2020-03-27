@@ -98,6 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* --------------- corinna lindsay --------------*/
 
 /* ---------------Base header - footer style --------------*/
 
@@ -107,6 +108,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #202322;
 }
 
 
@@ -117,10 +119,15 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flew-flow: row wrap;
+  margin: 0px;
+}
+
+header {
+  padding: 15px 0;
 }
 
 .header-divider {
-
+  width: 100%;
 }
 
 header nav {
@@ -133,13 +140,35 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  /*align-items: center;*/
+  width: 100%;
+}
+
+/*Header styles*/
+
+footer {
+  padding: 50px 0px 15px 0px;
+  flex-direction: column;
 }
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
+  /*margin: 50px 0;*/
+  color: white;
+  text-align: center;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social {
+  margin-bottom: 50px;
+}
+
+footer h4 {
+  margin: 0px 0px 15px 0px;
 }
 
 footer .social-icons {
@@ -154,14 +183,31 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer p {
+  margin: 0px;
+}
+
+footer .copyright {
+  color: white;
+  margin: 10px 0;
+}
+
+.content-wrapper {
+  width: 88%;
+}
 
 /* --------------- Mobile styles - Homepage --------------*/
 
+/* Hero Area */
 
 .hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.hero-area h1 {
+  margin: 55px 0;
 }
 
 /* aside styles */
@@ -172,7 +218,22 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
+  padding: 30px 0 54px;
 }
+
+aside .form-description p {
+  margin: 0px;
+}
+
+aside h3 {
+  margin: 0px 0px 15px;
+}
+
+aside .form {
+  margin: 30px 0px 0px
+}
+
 
 /* features styles */
 
@@ -180,6 +241,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 60px 0px 0px 0px;
 }
 
 .features .features-items {
@@ -189,6 +251,19 @@ aside {
   flex-flow: row wrap;
 }
 
+.features article {
+  width: 55%;
+  margin-bottom: 65px;
+}
+
+.features h2 {
+  margin: 0px 0px 50px 0px;
+}
+
+.features p {
+  margin: 0px;
+}
+
 
 /* reviews styles */
 
@@ -196,16 +271,40 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: #2a423a;
+  color: #fff;
+  padding: 50px 0px;
+}
+
+.reviews h2 {
+  margin: 0 0 20px 0;
+}
+
+.reviews h3 {
+  width: 60%;
+  margin: 0 0 15px 0;
+
+}
+
+.reviews .reviews-text p {
+  margin: 0px;
 }
 
 
-/* --------------- Mobile styles - About --------------*/
+/* ==========================================================================
+   Mobile styles - About Page
+   ========================================================================== */
 
 .mission {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0px;
+}
+
+.mission h2 {
+  margin: 0px 0px 20px 0px;
 }
 
 .contact-section {
@@ -213,22 +312,42 @@ aside {
   justify-content: center;
   align-items: center;
   flew-flow: row wrap;
+  background: #2a423a;
+  padding: 50px 0px;
 }
 
-/* --------------- Mobile styles - FAQ --------------*/
+.contact-section h2 {
+  margin: 0px 0px 20px 0px;
+}
+
+.contact-content p {
+  margin: 0px;
+}
+
+
+
+
+/* ==========================================================================
+   Mobile styles - FAQ Page
+   ========================================================================== */
 
 .faq {
   display: flex;
   justify-content: center;
   align-items: center;
   flew-flow: row wrap;
+  padding: 50px 0px;
 }
 
+.faq h2 {
+  margin:;
+}
+ 
 .faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flew-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 
