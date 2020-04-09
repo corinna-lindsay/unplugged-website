@@ -118,7 +118,7 @@ header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flew-flow: row wrap;
+  flex-flow: row wrap;
   margin: 0px;
 }
 
@@ -311,7 +311,7 @@ aside .form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flew-flow: row wrap;
+  flex-flow: row wrap;
   background: #2a423a;
   padding: 50px 0px;
 }
@@ -335,7 +335,7 @@ aside .form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flew-flow: row wrap;
+  flex-flow: row wrap;
   padding: 50px 0px;
 }
 
@@ -441,7 +441,10 @@ aside .form {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+  
   /*Tablet styles here*/
+
+  /* General styles */
 
   .content-wrapper {
     max-width: 640px;
@@ -471,8 +474,6 @@ aside .form {
     display: none;
   }
 
-  
-
   /* Aside */
 
   aside .content-wrapper {
@@ -492,7 +493,7 @@ aside .form {
 
   .features article {
     display: flex;
-    justify-content: center; /* aligns icons and text */
+    justify-content: center; /* aligns icons and text inside article */
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%; /* Each article takes up 50% of the space. 
@@ -536,9 +537,9 @@ aside .form {
     width: 100%;
   }
 
-   /* ==========================================================================
-     About Page
-     ========================================================================== */
+/* ==========================================================================
+  About Page
+  ========================================================================== */
 
   .mission-content {
     display: flex;
@@ -563,33 +564,91 @@ aside .form {
 
 
 
-   /* ==========================================================================
-     FAQ Page
-     ========================================================================== */
+/* ==========================================================================
+  FAQ Page
+  ========================================================================== */
 
   .faq .content-wrapper {
     justify-content: space-between;
   }
 
   .faq-content {
-    flex-basis: 45%;
+    flex-basis: 45%; /*Why was flex basis used here instead of width?*/
     justify-content: space-between;
   }
-
-  h2 {
+ 
+  .faq h2 {
     width: 100%;
   }
-
-
-
-
-
-
-
+}
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
+
+/*figure out why these styles are adjusted for desktop styles*/
+  
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero */
+
+
+  .hero-area h1 {
+    width: 75%;
+  }
+
+  /* Aside */
+
+  aside .content-wrapper {
+    justify-content: space-between;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 33%;
+  }
+
+ /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+
+  .reviews article div {
+    width: 47%;
+  }
+
+/* ==========================================================================
+  About Page
+  ========================================================================== */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+/* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
 }
+
+
 
 
 /* ==========================================================================
