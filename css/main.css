@@ -98,7 +98,7 @@ textarea {
    Author's custom styles - Corinna Lindsay
    ========================================================================== */
 
-/* general styles ----------------------*/
+/* Global styles */
 
 html {
   font-size: 16px;
@@ -143,11 +143,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -161,7 +161,7 @@ address {
 
 
 /* ==========================================================================
-   Base header and footer styles
+   Mobile styles - Base header and footer styles
    ========================================================================== */
 
 
@@ -175,7 +175,7 @@ footer {
 }
 
 
-/* Header styles -------------------------*/
+/* Header styles */
 
 header .content-wrapper {
   display: flex;
@@ -187,6 +187,14 @@ header .content-wrapper {
 
 header {
   padding: 15px 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -214,7 +222,7 @@ header nav ul {
   margin: 0;
 }
 
-/* Footer styles -----------------------------*/
+/* Footer styles */
 
 footer {
   flex-direction: column;
@@ -264,9 +272,15 @@ footer .copyright {
    Mobile styles - Homepage
    ========================================================================== */
 
-/* Hero Area --------------------------- */
+/* Hero Area */
 
 .hero-area {
+  background: url('../img/unplugged-retreat.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -280,7 +294,7 @@ footer .copyright {
   margin: 0;
 }
 
-/* aside styles ------------------------ */
+/* aside styles */
 
 
 aside {
@@ -329,13 +343,17 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-/* features styles ------------------------ */
+/* features styles */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: black;
 }
 
 .features .features-items {
@@ -360,7 +378,7 @@ input[type=button] {
 }
 
 
-/* reviews styles ------------------------ */
+/* reviews styles */
 
 .reviews {
   display: flex;
@@ -377,13 +395,15 @@ input[type=button] {
 
 .reviews h3 {
   width: 60%;
-  margin: 0 0 15px 0;
+  margin: 15px 0;
 
 }
 
 .reviews .reviews-text p {
   margin: 0px;
 }
+
+
 
 
 /* ==========================================================================
@@ -422,7 +442,7 @@ input[type=button] {
 
 
 /* ==========================================================================
-   Mobile styles - FAQ Page (compare styles with final)
+   Mobile styles - FAQ Page 
    ========================================================================== */
 
 .faq {
@@ -593,6 +613,18 @@ input[type=button] {
     display: none;
   }
 
+  /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    margin: 0;
+}
+
 
   /* Aside */
 
@@ -641,8 +673,9 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews article figure,
   .reviews article div {
-    width: 50%;
+    width: 48%;
   }
 
   .reviews h2 {
@@ -651,7 +684,9 @@ input[type=button] {
 
   .reviews h3 {
     width: 75%;
+    margin-top: 0;
   }
+
 
   /* Footer */
 
@@ -783,7 +818,9 @@ input[type=button] {
     width: 15%;
   }
 
-
+  header figure {
+    width: 24%;
+  }
 
   /* Hero */
 
@@ -791,6 +828,7 @@ input[type=button] {
   .hero-area h1 {
     font-size: 3.75em;
     width: 70%;
+    min-height: 600px;
   }
 
   /* Aside */
@@ -819,8 +857,9 @@ input[type=button] {
  .reviews h2 {
     padding-bottom: 50px; 
   }
+
   .reviews article div {
-    width: 42%;
+    width: 49%;
   }
 
   /* Footer */
