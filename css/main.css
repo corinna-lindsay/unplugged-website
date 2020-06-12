@@ -260,7 +260,7 @@ footer .social-icons p {
 } 
 
 footer .social-icons p i {
-  font-size: 2em;
+  font-size: 1.5em;
 
 }
 
@@ -696,7 +696,7 @@ input[type=button] {
   
 
   .features .features-item-description {
-    width: 62%;
+    width: 63%;
   }
 
 
@@ -751,6 +751,11 @@ input[type=button] {
   footer p {
       line-height: 1.285;
   }
+
+  footer .social-icons {
+    width: 11em; /*Why is width set as em instead of percentage? When i set as percentage, icons are narrow*/
+    justify-content: space-between;
+  } 
 
   footer .copyright {
     width: 100%;
