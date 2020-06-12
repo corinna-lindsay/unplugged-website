@@ -253,6 +253,15 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  background-color: #527158;
+  height: 40px;
+  width: 40px;
+} 
+
+footer .social-icons p i {
+  font-size: 2em;
+
 }
 
 footer p {
