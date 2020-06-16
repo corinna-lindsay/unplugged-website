@@ -114,6 +114,7 @@ body {
 ol,
 ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -127,6 +128,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.7em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -182,7 +184,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0px;
+  margin: 0;
 }
 
 header {
@@ -265,7 +267,7 @@ footer .social-icons p i {
 }
 
 footer p {
-  margin: 0px;
+  margin: 0;
 }
 
 footer .copyright {
@@ -273,9 +275,6 @@ footer .copyright {
   margin: 20px 0;
 }
 
-.content-wrapper {
-  width: 88%;
-}
 
 /* ==========================================================================
    Mobile styles - Homepage
@@ -378,7 +377,7 @@ input[type=button] {
 }
 
 .features h2 {
-  margin: 0px 0px 50px 0px;
+  margin-bottom: 60px;
 }
 
 .features p {
@@ -433,7 +432,7 @@ input[type=button] {
 }
 
 .mission h2 {
-  margin: 0px 0px 20px 0px;
+  margin-bottom: 20px;
 }
 
 .map figure {
@@ -461,7 +460,7 @@ input[type=button] {
 }
 
 .contact-section h2 {
-  margin: 0px 0px 20px 0px;
+  margin-bottom: 20px;
 }
 
 .contact-content p {
@@ -494,7 +493,6 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
 }
-
 
 
 /* ==========================================================================
@@ -598,7 +596,7 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
   
 
-  /* General styles */
+  /* General tablet styles */
 
   .content-wrapper {
     max-width: 640px;
@@ -698,6 +696,7 @@ input[type=button] {
   .features .features-item-description {
     width: 63%;
   }
+
 
 
   /* Reviews */
