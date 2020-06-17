@@ -163,7 +163,7 @@ address {
 
 
 /* ==========================================================================
-   Mobile styles - Base header and footer styles
+   Mobile styles - Header and footer styles
    ========================================================================== */
 
 
@@ -218,9 +218,9 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  font-size: 1.125em;
+  font-size: 1.2em;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0;
 }
 
